@@ -229,20 +229,21 @@
 
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="mailto:onkarmalawade@gmail.com" method="post" enctype="text/plain">
+                    <form action="https://api.web3forms.com/submit"method="post" enctype="text/plain">
+                        <input type="hidden" name="access_key" value="ad6822c5-8a9f-4f47-94c3-2bbe4e86efb7">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Name" name="name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" name="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name="Subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" name="message" rows="10" placeholder="Message.." required></textarea>
                         </div>
                         <div class="button">
                             <button type="submit">Send message</button>
